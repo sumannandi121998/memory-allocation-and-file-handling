@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float *f(float *x,float n)
+float *f(float *x,float n,float *arr)
     {
-    	float *arr;
     	int i;
 	float s=0,t=0;
     	for (i=0;i<n;i++)
@@ -34,7 +33,7 @@ int main()
 		ptr[i]=(i+1)*(i+1);
 	}
 
-	float *p=f(ptr,100);
+	float *p=f(ptr,100,arr);
 	printf("The mean is:  %f\nThe variance is:  %f\n",p[0],p[1]);
 	free(ptr);
         printf("Memory is cleared");

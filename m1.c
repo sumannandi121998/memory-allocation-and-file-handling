@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "function.h"
-float *f(float *x,float n,float *arr)
+#include "function.h" //including header file
+float *f(float *x,float n,float *arr) //function for finding mean and variance
     {
     	int i;
 	float s=0,t=0;
